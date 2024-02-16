@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
 body {
+  color: white;
   background-color: rgb(0, 0, 0);  
 
 }
@@ -10,42 +11,15 @@ body {
   text-decoration: none;
   font-family: 'Poppins', sans-serif;
 }
-
-
-
-.multiText{
-  font-size: 2.5rem;
-  font-family: 'Arial Narrow', Arial, sans-serif;
-  color: bisque;
- 
-}
-
-.footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: red;
-    color: white;
-    text-align: center;
- }
-  
-  
+.conatiner{
+  width: 100dvw;
+  height: 100dvh;
+}  
 .text {
-/*     display: flex;
-    font-size: 2.5rem;
-    /* justify-content: center; 
-    align-items: center;
-    color: aliceblue;
-    text-align: center;
-    margin: 15px;
-    padding: 2px;
-    transform: rotate(45deg);
-    opacity: 0; /* Initially hidden 
-    transition: opacity 0.5s ease; */
-   font-size: 1rem;
-    top: 35%;
-    left: 50%;
+  
+    font-size: 1rem;
+    top: 45%;
+    left: 40%;
     color: aliceblue;
     text-align: center;
   
@@ -53,30 +27,14 @@ body {
     padding: 2px;
     transform: rotate(180deg);
     opacity: 1; /* Initially hidden */
-    transition: opacity 0.5s ease;
+    transition: opacity 0.5s ease; /* Smooth transition for opacity */
   }
-.box {
-/*     display: flex;
-    width: 250px;
-    height: 250px;
-    border-radius: 50% 50% 50% 0;
-    background: rgb(206, 51, 51);
-    position: absolute;
-    transform: rotate(-45deg);
-    transform-origin: bottom; 
-    left: 50%;
-    top: 30%;
-    margin: -20px 0 0 -20px;
-    animation-name: bounce;
-    animation-fill-mode: both;
-    animation-duration: 3s; */
-    /* animation-iteration-count: infinite; */
-
-  display: flex;
+ .box {
+    display: flex;
     width: 100px;
     height: 100px;
     border-radius: 50% 50% 50% 0;
-    background: rgb(206, 51, 51);
+    background:red;
     position: absolute;
     transform: rotate(155deg);
     transform-origin: bottom; 
@@ -87,14 +45,14 @@ body {
     animation-fill-mode: both;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    
-  }
+  } 
+  
 
   .heart { 
   
     position: absolute; 
     top: 35%;
-    left: 50%;
+    left: 40%;
     width: 850px;
     height: 550px;
     margin: -20px 0 0 -20px;
@@ -125,17 +83,34 @@ body {
     transform: rotate(45deg); 
     transform-origin :100% 100%; 
 }
-  
+
+   
   @keyframes bounce {
     0% {
       opacity: 0;
-      transform: translateY(-2000px) rotate(deg);
+      transform: translateY(-2000px) rotate(0deg);
     }
     60% {
       opacity: 1;
-      transform:scaleY(0.6) translateY(30px) rotate(deg);
+      transform:scaleY(0.6) translateY(30px) rotate();
     }
     100% {
-      transform:  scaleY(1) translateY(0) rotate(deg);
+      transform:  scaleY(1) translateY(0) rotate();
     }
   } 
+  .multiText{
+    font-size: 1rem;
+    font-family: 'Arial Narrow', Arial, sans-serif;
+    color: bisque;
+   
+  }
+  .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: red;
+    color: white;
+    text-align: center;
+  }
+    
